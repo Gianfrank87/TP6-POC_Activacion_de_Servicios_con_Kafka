@@ -1,0 +1,6 @@
+{
+  "name": "@tp6/kafka-toolkit",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {"mongodb":"^6.9.0","kafkajs":"^2.2.4"}
+}

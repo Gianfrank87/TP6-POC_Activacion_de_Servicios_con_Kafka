@@ -1,0 +1,16 @@
+{
+  "name": "tp6-kafka-activation-poc",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/*", "libs/*"],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "start:activation": "npm run start --workspace @tp6/activation-api",
+    "start:billing": "npm run start --workspace @tp6/billing-service",
+    "start:provisioning": "npm run start --workspace @tp6/provisioning-service",
+    "start:notification": "npm run start --workspace @tp6/notification-service",
+    "start:crm": "npm run start --workspace @tp6/crm-analytics-service",
+    "start:loyalty": "npm run start --workspace @tp6/loyalty-service",
+    "start:ui": "npm run dev --workspace @tp6/demo-ui -- --host 0.0.0.0"
+  }
+}
